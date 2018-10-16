@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="jumbotron">
+        <div>This is a simple tool under development</div>
+    </div>
+
+    <div class="panel-info">
+        <div class="text-center has-error">
+            <div class="text-danger" ng-if="error" ng-bind-html="errorMsg"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text-center page-header">
+            <div class="h3 panel-heading">Login Form</div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="text-center">
+                <div class="form-group">
+                    <div class="col-sm-offset-0 col-sm-2">User Name</div>
+                    <div class="col-sm-offset-0 col-sm-6"><input class="input-sm form-control" ng-model="user.name" name="username" type="text"/></div>
+                    <div class="col-sm-offset-0 col-sm-push-2">
+                        <div ng-if="error" class="form-inline text-danger has-error">
+                            <span ng-bind-html="username_error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-0 col-sm-2">Password</div>
+                    <div class="col-sm-offset-0 col-sm-6"><input class="input-sm form-control" ng-model="user.password" name="password" type="password"/></div>
+                    <div class="col-sm-offset-0 col-sm-push-2">
+                        <div ng-if="error" class="form-inline text-danger has-error">
+                            <span ng-bind-html="password_error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-0 col-sm-2">Confirm Password</div>
+                    <div class="col-sm-offset-0 col-sm-6"><input class="input-sm form-control" ng-model="user.confirmPassword" name="confirmPassword" type="password"/></div>
+                    <div class="col-sm-offset-0 col-sm-push-2">
+                        <div ng-if="error" class="form-inline text-danger has-error">
+                            <span ng-bind-html="passwordmatch_error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-0 col-sm-2">Secret Code</div>
+                    <div class="col-sm-offset-0 col-sm-6"><input class="input-sm form-control" ng-model="user.secretCode" name="user.secretCode" type="password"/></div>
+                    <div class="col-sm-offset-0 col-sm-push-2">
+                        <div ng-if="error" class="form-inline text-danger has-error">
+                            <span ng-bind-html="secretcode_error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-0 col-sm-2">Email</div>
+                    <div class="col-sm-offset-0 col-sm-6"><input class="input-sm form-control" ng-model="user.email" name="user.email" type="text"/></div>
+                    <div class="col-sm-offset-0 col-sm-push-2">
+                        <div ng-if="error" class="form-inline text-danger has-error">
+                            <span ng-bind-html="email_error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-0 col-sm-3"></div>
+                    <div class="col-sm-offset-0 col-sm-2">
+                        <button class="Submit btn-info form-control" ng-click="registerUser()">Register</button>
+                    </div>
+                    <div class="col-sm-offset-0 col-sm-2">
+                        <button class="Register btn-info form-control" ng-click="cancel()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "GENERAL_ERROR" : "some error occured please try again!!",
+  "REGISTRATION_FAILURE" : "registration Failure",
+  "REGISTRATION_INVALID_DETAILS" : "Please enter proper input values!!",
+  "REGISTRATION_INVALID_USERNAME" : "Please enter Valid userName, minimum 7 charecters!!",
+  "REGISTRATION_INVALID_EMAIL" : "Please enter proper email!!",
+  "REGISTRATION_INVALID_PASSWORD" : "Please enter proper password, should contain atleast 7 digits!!",
+  "REGISTRATION_INVALID_PASSWORD_MATCH" : "Passwords do not match!!",
+  "REGISTRATION_INVALID_SECRETCODE" : "Please enter proper secret code!!",
+
+
+
+  "LOGIN_INVALID_USERNAME_PASSWORD" : "Please enter valid username and password!!"
+}
